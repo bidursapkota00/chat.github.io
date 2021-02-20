@@ -14,7 +14,7 @@ login.addEventListener('click', e => {
                 localStorage.setItem('username', result.additionalUserInfo.profile.given_name);  
             }
             //window.location.href = "index.html";
-            window.location.replace("index.html");
+            window.location.replace("home.html");
         }).catch((error) => {
             console.log(error);
             console.log('failed login');
