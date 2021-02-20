@@ -9,9 +9,10 @@ class ChatUI{
         this.list.innerHTML = '';
     }
     render(data){
-        const when = dateFns.distanceInWordsToNow(
-            data.created_at.toDate(),
-            { addSuffix: true }
+        //const when = dateFns.distanceInWordsToNow(
+           // data.created_at.toDate(),
+            //{ addSuffix: true }
+        const when = data.created_at.toDate();
         );
         let bool = data.username == localStorage.getItem('username') ? 1 : 0;
         let className = "";
