@@ -13,7 +13,7 @@ class ChatUI{
            // data.created_at.toDate(),
             //{ addSuffix: true }
         const when = data.created_at.toDate();
-        );
+        
         let bool = data.username == localStorage.getItem('username') ? 1 : 0;
         let className = "";
         let clas = "";
